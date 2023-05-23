@@ -18,7 +18,7 @@ main:
 	.end main
 
 successivo:
-	andi $t1, $a0, 1 # andi permette di verificare facilmente se un numero è pari o dispari
+	andi $t1, $a0, 1 # andi permette di verificare facilmente se un numero è pari o dispari: isolo il LSB e lo salvo in $t1
 	beqz $t1, pari
 	mul $a0,$a0,3
 	addi $a0,$a0,1
